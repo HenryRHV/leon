@@ -20,7 +20,7 @@ npm run setup:offline-hotword
 # Run main server
 npm run build && npm start
 
-# Go to http://localhost:1337
+# Go to http://localhost:1337 (or http://<local_ip>:1337 from another device)
 
 # Run hotword node
 npm run wake
