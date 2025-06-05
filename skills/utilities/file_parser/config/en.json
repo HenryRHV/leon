@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../../schemas/skill-schemas/skill-config.json",
+  "actions": {
+    "analyze": {
+      "type": "logic",
+      "utterance_samples": [
+        "Analyze file @file",
+        "Read @file",
+        "Open @file",
+        "Get info about @file"
+      ],
+      "http_api": {
+        "entities": [
+          { "entity": "file", "resolution": ["value"] }
+        ]
+      }
+    }
+  },
+  "answers": {
+    "summary": [
+      "Here is the information for %file%: %info%"
+    ],
+    "unsupported": [
+      "Unsupported file type for %file%."
+    ],
+    "not_found": [
+      "I cannot find %file%."
+    ]
+  }
+}

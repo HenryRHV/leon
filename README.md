@@ -113,6 +113,9 @@ If you want to, Leon can communicate with you by being **offline to protect your
 > You can find what he is able to do by browsing the [skills list](https://github.com/leon-ai/leon/tree/develop/skills).<br>
 > Please do know that after the official release, we will build many skills along with the community. Feel free to [join us on Discord](https://discord.gg/MNQqqKg) to be part of the journey.
 
+The repository now includes a `file_parser` skill that works offline and can read
+formats such as **.xmind**, **.pdf**, **.docx**, **.txt**, **.xlsx**, **.eml**, **.mp4**, **.png** and **.jpg**.
+
 Sounds good to you? Then let's get started!
 
 ## ☁️ Try with a Single-Click
@@ -154,6 +157,19 @@ leon start
 # Go to http://localhost:1337 (or http://<local_ip>:1337 from another device)
 # Hooray! Leon is running
 ```
+
+### Offline Setup on macOS (Apple&nbsp;Silicon)
+
+Leon can run completely offline once the speech engines and wake word models are
+installed locally. On a MacBook&nbsp;Air M2 run:
+
+```sh
+npm run setup:offline
+```
+
+This downloads the required STT, TTS and hotword packages and configures them
+for offline use.
+
 
 ## 📚 Documentation
 

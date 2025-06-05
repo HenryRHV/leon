@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/skill-schemas/skill.json",
+  "name": "File Parser",
+  "bridge": "python",
+  "version": "1.0.0",
+  "description": "Extracts basic information from various file types.",
+  "author": {
+    "name": "Codex",
+    "url": "https://github.com"
+  }
+}
