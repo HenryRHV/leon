@@ -1,0 +1,4 @@
+{
+  "admin": { "password": "mypass", "role": "admin" },
+  "guest": { "password": "guest", "role": "viewer" }
+}
