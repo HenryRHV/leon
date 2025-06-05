@@ -7,10 +7,18 @@
         "Summarize emails",
         "Check my inbox"
       ]
+    },
+    "draft_reply": {
+      "type": "logic",
+      "utterance_samples": [
+        "Draft a reply",
+        "Write a response"
+      ]
     }
   },
   "answers": {
-    "done": ["Emails processed."],
+    "summary": ["%summary%"],
+    "reply": ["%reply%"],
     "error": ["Unable to process emails."]
   }
 }

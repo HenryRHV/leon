@@ -1,6 +1,8 @@
 # 🧠 Leon Autonomous AI Assistant – Functionalities & Use Cases
 
 This document outlines the full capabilities of the upgraded **Leon AI system**, now acting as a **fully offline, multi-step autonomous agent** for productivity, document intelligence, and AI-powered task execution.
+Features marked with **(planned)** are not yet implemented.
+
 
 ---
 
@@ -44,7 +46,7 @@ This document outlines the full capabilities of the upgraded **Leon AI system**,
 | ----------------------- | ------------------- | ------------------------------------------------------ |
 | **Audio Transcription** | Whisper integration | Transcribes `.mp3` or `.mp4` meeting recordings        |
 | **OCR**                 | Tesseract           | Extracts text from images, scans, or handwritten notes |
-| **Voice Commands**      | (Optional skill)    | Say “Hey Leon” + goal via mic (planned feature)        |
+| **Voice Commands (planned)** | (Optional skill) | Say “Hey Leon” + goal via mic |
 
 ---
 

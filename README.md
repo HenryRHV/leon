@@ -116,6 +116,14 @@ If you want to, Leon can communicate with you by being **offline to protect your
 The repository now includes a `file_parser` skill that works offline and can read
 formats such as **.xmind**, **.pdf**, **.docx**, **.txt**, **.xlsx**, **.eml**, **.mp4**, **.png** and **.jpg**.
 
+### Current Features
+
+- Offline file parser for PDFs, DOCX, XLSX, TXT, EML and more.
+- Mind map tagging and search.
+- Email analysis with Thunderbird mailbox support and reply drafting.
+- Speech transcription via Whisper and OCR with Tesseract.
+- **Voice command hotword detection is still planned.**
+
 Sounds good to you? Then let's get started!
 
 ## ☁️ Try with a Single-Click
