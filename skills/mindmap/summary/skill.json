@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/skill-schemas/skill.json",
+  "name": "Mindmap Summary",
+  "bridge": "python",
+  "version": "1.0.0",
+  "description": "Parse .xmind files and summarize as markdown.",
+  "author": {
+    "name": "OpenAI Codex",
+    "url": "https://github.com/openai"
+  }
+}
