@@ -33,6 +33,7 @@ export const IS_TESTING_ENV = LEON_NODE_ENV === TESTING_ENV
  */
 export const BIN_PATH = path.join(process.cwd(), 'bin')
 export const LOGS_PATH = path.join(process.cwd(), 'logs')
+export const AGENT_MEMORY_PATH = path.join(LOGS_PATH, "agent_memory.json")
 export const SKILLS_PATH = path.join(process.cwd(), 'skills')
 export const GLOBAL_DATA_PATH = path.join(process.cwd(), 'core', 'data')
 export const MODELS_PATH = path.join(GLOBAL_DATA_PATH, 'models')
