@@ -116,7 +116,11 @@
     "socket.io": "4.7.5",
     "socket.io-client": "4.7.5",
     "stt": "1.4.0",
-    "tree-kill": "1.2.2"
+    "tree-kill": "1.2.2",
+    "chromadb": "3.0.1",
+    "jszip": "3.10.1",
+    "xml2js": "0.6.2",
+    "xmind": "2.2.33"
   },
   "devDependencies": {
     "@eslint/compat": "1.2.3",
