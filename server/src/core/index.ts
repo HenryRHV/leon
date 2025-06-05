@@ -20,6 +20,7 @@ import Brain from '@/core/brain/brain'
 import LLMManager from '@/core/llm-manager/llm-manager'
 import LLMProvider from '@/core/llm-manager/llm-provider'
 import Persona from '@/core/llm-manager/persona'
+import Agent from "@/core/agent/agent"
 import { ConversationLogger } from '@/conversation-logger'
 import { SystemHelper } from '@/helpers/system-helper'
 import { LogHelper } from '@/helpers/log-helper'
@@ -85,3 +86,5 @@ export const MODEL_LOADER = new ModelLoader()
 export const NLU = new NaturalLanguageUnderstanding()
 
 export const BRAIN = new Brain()
+
+export const AGENT = new Agent()
