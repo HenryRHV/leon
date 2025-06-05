@@ -1,0 +1,16 @@
+{
+  "$schema": "../../../../schemas/skill-schemas/skill-config.json",
+  "actions": {
+    "run": {
+      "type": "logic",
+      "utterance_samples": [
+        "Analyze mind map file",
+        "Parse mindmap"
+      ]
+    }
+  },
+  "answers": {
+    "done": ["Mind map processed."],
+    "error": ["Unable to process mind map."]
+  }
+}
