@@ -61,7 +61,7 @@ export default class SocketServer {
   public async init(): Promise<void> {
     const io = IS_DEVELOPMENT_ENV
       ? new SocketIOServer(HTTP_SERVER.httpServer, {
-          cors: { origin: `${HTTP_SERVER.host}:3000` }
+          cors: { origin: '*' }
         })
       : new SocketIOServer(HTTP_SERVER.httpServer)
 

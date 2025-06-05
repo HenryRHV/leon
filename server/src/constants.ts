@@ -1,5 +1,6 @@
 import path from 'node:path'
 import fs from 'node:fs'
+import { NetworkHelper } from '@/helpers/network-helper'
 
 import dotenv from 'dotenv'
 
@@ -202,7 +203,8 @@ export const FR_SPACY_MODEL_VERSION = '3.4.0'
  */
 export const LANG = process.env['LEON_LANG'] as LongLanguageCode
 
-export const HOST = process.env['LEON_HOST']
+const DEFAULT_IP = NetworkHelper.getLocalExternalIP() || 'localhost'
+export const HOST = process.env['LEON_HOST'] || `http://${DEFAULT_IP}`
 export const PORT = Number(process.env['LEON_PORT'])
 
 export const TIME_ZONE = process.env['LEON_TIME_ZONE']

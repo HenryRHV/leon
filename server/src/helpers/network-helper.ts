@@ -1,4 +1,5 @@
 import axios from 'axios'
+import os from 'node:os'
 
 const HUGGING_FACE_URL = 'https://huggingface.co'
 const HUGGING_FACE_MIRROR_URL = 'https://hf-mirror.com'
@@ -32,5 +33,23 @@ export class NetworkHelper {
     }
 
     return url
+  }
+
+  /**
+   * Get the first non-internal IPv4 address
+   * @example getLocalExternalIP() // '192.168.1.10'
+   */
+  public static getLocalExternalIP(): string | null {
+    const nets = os.networkInterfaces()
+
+    for (const name of Object.keys(nets)) {
+      for (const net of nets[name] || []) {
+        if (net.family === 'IPv4' && !net.internal) {
+          return net.address
+        }
+      }
+    }
+
+    return null
   }
 }
