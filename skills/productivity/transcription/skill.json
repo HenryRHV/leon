@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/skill-schemas/skill.json",
+  "name": "Transcription",
+  "bridge": "python",
+  "version": "1.0.0",
+  "description": "Transcription utilities.",
+  "author": {
+    "name": "Auto Generated",
+    "email": "dev@example.com"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "../../../../schemas/skill-schemas/skill-config.json",
+  "actions": {
+    "run": {
+      "type": "logic",
+      "utterance_samples": [
+        "Index documents",
+        "Analyze my documents"
+      ]
+    }
+  },
+  "answers": {
+    "done": ["Documents indexed."],
+    "error": ["Unable to index documents."]
+  }
+}

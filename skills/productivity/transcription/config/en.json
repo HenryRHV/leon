@@ -1,0 +1,16 @@
+{
+  "$schema": "../../../../schemas/skill-schemas/skill-config.json",
+  "actions": {
+    "run": {
+      "type": "logic",
+      "utterance_samples": [
+        "Transcribe audio file",
+        "Convert speech to text"
+      ]
+    }
+  },
+  "answers": {
+    "done": ["Transcription complete."],
+    "error": ["Unable to transcribe file."]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "../../../../schemas/skill-schemas/skill-config.json",
+  "actions": {
+    "run": {
+      "type": "logic",
+      "utterance_samples": [
+        "Read text from image",
+        "Run OCR"
+      ]
+    }
+  },
+  "answers": {
+    "done": ["Image processed."],
+    "error": ["Unable to read image."]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/skill-schemas/skill.json",
+  "name": "Ocr",
+  "bridge": "python",
+  "version": "1.0.0",
+  "description": "Ocr utilities.",
+  "author": {
+    "name": "Auto Generated",
+    "email": "dev@example.com"
+  }
+}

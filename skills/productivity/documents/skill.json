@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/skill-schemas/skill.json",
+  "name": "Documents",
+  "bridge": "python",
+  "version": "1.0.0",
+  "description": "Documents utilities.",
+  "author": {
+    "name": "Auto Generated",
+    "email": "dev@example.com"
+  }
+}

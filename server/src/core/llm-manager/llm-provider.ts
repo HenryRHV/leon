@@ -12,6 +12,7 @@ import { LogHelper } from '@/helpers/log-helper'
 import { FileHelper } from '@/helpers/file-helper'
 import LocalLLMProvider from '@/core/llm-manager/llm-providers/local-llm-provider'
 import GroqLLMProvider from '@/core/llm-manager/llm-providers/groq-llm-provider'
+import OllamaLLMProvider from '@/core/llm-manager/llm-providers/ollama-llm-provider'
 
 interface CompletionResult {
   dutyType: LLMDuties
@@ -29,11 +30,12 @@ interface NormalizedCompletionResult {
   usedInputTokens: number
   usedOutputTokens: number
 }
-type Provider = LocalLLMProvider | GroqLLMProvider | undefined
+type Provider = LocalLLMProvider | GroqLLMProvider | OllamaLLMProvider | undefined
 
 const LLM_PROVIDERS_MAP = {
   [LLMProviders.Local]: 'local-llm-provider',
-  [LLMProviders.Groq]: 'groq-llm-provider'
+  [LLMProviders.Groq]: 'groq-llm-provider',
+  [LLMProviders.Ollama]: 'ollama-llm-provider'
 }
 const DEFAULT_MAX_EXECUTION_TIMOUT = 32_000
 const DEFAULT_MAX_EXECUTION_RETRIES = 2
