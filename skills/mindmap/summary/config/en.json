@@ -1,0 +1,25 @@
+{
+  "$schema": "../../../../schemas/skill-schemas/skill-config.json",
+  "actions": {
+    "summarize": {
+      "type": "logic",
+      "utterance_samples": [
+        "Summarize mindmap @file",
+        "Parse mindmap @file",
+        "Read mindmap @file",
+        "Summarize the mind map @file"
+      ],
+      "http_api": {
+        "entities": [
+          { "entity": "file", "resolution": ["value"] }
+        ]
+      }
+    }
+  },
+  "answers": {
+    "summary": ["Here is the mindmap summary:\n%markdown%"],
+    "file_not_provided": ["Please provide a mindmap file."],
+    "file_not_found": ["I could not find the provided file."],
+    "parse_error": ["I was not able to parse the mindmap."]
+  }
+}
